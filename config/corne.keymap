@@ -69,6 +69,16 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40 41>;
             hold-trigger-on-release;
         };
+
+        ht: ht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -82,10 +92,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC                &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E  &mt NUMBER_4 R  &mt N5 T       &mt Y Y    &mt N7 U         &mt N8 I      &mt N9 O  &mt N0 P           &kp BACKSPACE
-&mt LA(LC(SPACE)) TAB  &kp A           &kp S           &kp D           &kp F           &kp G          &kp H      &kp J            &kp K         &kp L     &mt SEMICOLON SQT  &kp ENTER
-&kp LEFT_SHIFT         &kp Z           &kp X           &kp C           &kp V           &kp B          &kp N      &kp M            &kp COMMA     &kp DOT   &kp FSLH           &kp GRAVE
-                                                       &lt 3 LG(C)     &lt 1 LG(V)     &lt 1 SPACE    &lt 2 RET  &lt 5 BACKSPACE  &lt 4 DELETE
+&kp ESC                &ht NUMBER_1 Q  &ht NUMBER_2 W  &ht NUMBER_3 E  &ht NUMBER_4 R  &ht N5 T       &ht NUMBER_6 Y  &ht N7 U         &ht N8 I      &ht N9 O  &ht N0 P           &kp BACKSPACE
+&ht LA(LC(SPACE)) TAB  &kp A           &kp S           &kp D           &kp F           &kp G          &kp H           &kp J            &kp K         &kp L     &ht SEMICOLON SQT  &kp ENTER
+&kp LEFT_SHIFT         &kp Z           &kp X           &kp C           &kp V           &kp B          &kp N           &kp M            &kp COMMA     &kp DOT   &kp FSLH           &kp GRAVE
+                                                       &lt 3 LG(C)     &lt 1 LG(V)     &lt 1 SPACE    &lt 2 RET       &lt 5 BACKSPACE  &lt 4 DELETE
             >;
         };
 
