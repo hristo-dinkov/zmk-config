@@ -96,10 +96,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp LS(LG(SPACE))  &kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LA(R)  &kp LA(T)        &trans    &trans    &trans  &trans     &trans  &trans
-&kp LA(TAB)        &trans     &trans     &trans     &kp LG(F)  &trans           &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans
-&trans             &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(SPACE)    &trans    &trans    &trans  &trans     &trans  &trans
-                                         &trans     &trans     &trans           &trans    &trans    &trans
+&kp LS(LG(SPACE))  &kp LA(Q)  &kp LA(W)  &kp LA(E)  &kp LA(R)  &kp LA(T)        &kp LG(LEFT)  &kp LA(LEFT)  &kp LA(RIGHT)  &kp LG(RIGHT)  &trans  &trans
+&kp LA(TAB)        &trans     &trans     &trans     &kp LG(F)  &trans           &kp LEFT      &kp DOWN      &kp UP         &kp RIGHT      &trans  &trans
+&trans             &kp LG(Z)  &kp LG(X)  &kp LG(C)  &kp LG(V)  &kp LG(SPACE)    &trans        &trans        &trans         &trans         &trans  &trans
+                                         &trans     &trans     &trans           &trans        &trans        &trans
             >;
         };
 
