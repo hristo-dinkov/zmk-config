@@ -81,10 +81,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC                &ht NUMBER_1 Q  &ht NUMBER_2 W  &ht NUMBER_3 E  &ht NUMBER_4 R    &ht N5 T       &ht NUMBER_6 Y  &ht N7 U         &ht N8 I      &ht N9 O  &ht N0 P           &kp BACKSPACE
-&ht LA(LC(SPACE)) TAB  &kp A           &kp S           &kp D           &kp F             &kp G          &kp H           &kp J            &kp K         &kp L     &ht SEMICOLON SQT  &kp ENTER
-&kp LEFT_SHIFT         &kp Z           &kp X           &kp C           &kp V             &kp B          &kp N           &kp M            &kp COMMA     &kp DOT   &kp FSLH           &kp GRAVE
-                                                       &kp LEFT_ALT    &kp LEFT_COMMAND  &lt 1 SPACE    &lt 2 RET       &lt 5 BACKSPACE  &lt 4 DELETE
+&kp ESC                &ht NUMBER_1 Q  &ht NUMBER_2 W  &ht NUMBER_3 E  &ht NUMBER_4 R  &ht N5 T          &ht NUMBER_6 Y  &ht N7 U         &ht N8 I      &ht N9 O  &ht N0 P           &kp BACKSPACE
+&ht LA(LC(SPACE)) TAB  &kp A           &kp S           &kp D           &kp F           &kp G             &kp H           &kp J            &kp K         &kp L     &ht SEMICOLON SQT  &kp ENTER
+&kp LEFT_SHIFT         &kp Z           &kp X           &kp C           &kp V           &kp B             &kp N           &kp M            &kp COMMA     &kp DOT   &kp FSLH           &kp GRAVE
+                                                       &kp LCTRL       &kp LEFT_ALT    &mt LCMD SPACE    &lt 1 RET       &lt 2 BACKSPACE  &lt 4 DELETE
             >;
         };
 
